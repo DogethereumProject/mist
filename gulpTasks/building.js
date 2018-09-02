@@ -12,7 +12,7 @@ const shell = require('shelljs');
 const version = require('../package.json').version;
 
 const type = options.type;
-const applicationName = options.wallet ? 'Ethereum Wallet' : 'Mist';
+const applicationName = options.wallet ? 'Dogethereum Wallet' : 'Mist';
 
 gulp.task('clean-dist', cb => {
   return del([`./dist_${type}`, './meteor-dapp-wallet'], cb);
@@ -130,7 +130,7 @@ gulp.task('build-dist', cb => {
     description: applicationName,
     homepage: 'https://github.com/ethereum/mist',
     build: {
-      appId: `org.ethereum.${type}`,
+      appId: `org.dogethereum.${type}`,
       asar: true,
       directories: {
         buildResources: '../build',

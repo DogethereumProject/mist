@@ -269,7 +269,7 @@ let menuTempl = function(webviews) {
                 // geth
               } else {
                 if (process.platform === 'darwin') {
-                  userPath += '/Library/Ethereum/keystore';
+                  userPath += '/Library/Dogethereum/keystore';
                 }
 
                 if (
@@ -277,11 +277,11 @@ let menuTempl = function(webviews) {
                   process.platform === 'linux' ||
                   process.platform === 'sunos'
                 ) {
-                  userPath += '/.ethereum/keystore';
+                  userPath += '/.dogethereum/keystore';
                 }
 
                 if (process.platform === 'win32') {
-                  userPath = `${Settings.appDataPath}\\Ethereum\\keystore`;
+                  userPath = `${Settings.appDataPath}\\Dogethereum\\keystore`;
                 }
               }
 
@@ -690,19 +690,19 @@ let menuTempl = function(webviews) {
     {
       label: i18n.t('mist.applicationMenu.help.mistWiki'),
       click() {
-        shell.openExternal('https://github.com/ethereum/mist/wiki');
+        shell.openExternal('https://github.com/dogethereumproject/mist/wiki');
       }
     },
     {
-      label: i18n.t('mist.applicationMenu.help.gitter'),
+      label: i18n.t('mist.applicationMenu.help.Telegram'),
       click() {
-        shell.openExternal('https://gitter.im/ethereum/mist');
+        shell.openExternal('https://t.me/dogethereum_net');
       }
     },
     {
       label: i18n.t('mist.applicationMenu.help.reportBug'),
       click() {
-        shell.openExternal('https://github.com/ethereum/mist/issues');
+        shell.openExternal('https://github.com/dogethereumproject/mist/issues');
       }
     }
   );

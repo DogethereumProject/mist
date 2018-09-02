@@ -161,7 +161,7 @@ class IpcProviderBackend {
                       ethereumNode.removeListener('state', onStateChange);
 
                       log.debug(
-                        `Ethereum node connected, resume connecting socket ${ownerId}`
+                        `Dogethereum node connected, resume connecting socket ${ownerId}`
                       );
 
                       resolve();
@@ -225,7 +225,7 @@ class IpcProviderBackend {
     switch (state) { // eslint-disable-line default-case
       // stop syncing when node about to be stopped
       case ethereumNode.STATES.STOPPING:
-        log.info('Ethereum node stopping, disconnecting sockets');
+        log.info('Dogethereum node stopping, disconnecting sockets');
 
         Q.all(
           _.map(this._connections, item => {
