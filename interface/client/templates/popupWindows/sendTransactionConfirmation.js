@@ -260,7 +260,7 @@ Template['popupWindows_sendTransactionConfirmation'].helpers({
     if (gas && this.gasPrice) {
       return EthTools.formatBalance(
         new BigNumber(gas, 10).times(new BigNumber(this.gasPrice, 10)),
-        '0,0.0[0000000] unit',
+        '0,0.0[0000000]',
         'ether'
       );
     }

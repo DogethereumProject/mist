@@ -93,7 +93,7 @@ class Settings {
   }
 
   get appName() {
-    return this.uiMode === 'mist' ? 'Mist' : 'Dogethereum Wallet';
+    return this.uiMode === 'mist' ? 'Dogethereum Mist' : 'Dogethereum Wallet';
   }
 
   get appLicense() {

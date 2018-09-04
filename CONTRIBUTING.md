@@ -6,7 +6,7 @@
 
 To help improve Mist (_Dogethereum Wallet_), please include the following:
 
-* What do you run? (_Binary version from [releases](https://github.com/ethereum/mist/releases) or a development version from the [commandline](https://github.com/ethereum/mist#run-mist)_)
+* What do you run? (_Binary version from [releases](https://github.com/dogethereumproject/mist/releases) or a development version from the [commandline](https://github.com/dogethereumproject/mist#run-mist)_)
 * Which version do you use? (_Check the `VERSION` file in the Mist folder_)
 * What OS you're on?
 

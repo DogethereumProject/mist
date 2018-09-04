@@ -18,7 +18,7 @@ gulp.task('update-nodes', cb => {
   const geth = newJson.clients.Geth;
 
   // Query latest geth version
-  got('https://api.github.com/repos/dogethereumproject/go-dogethereum/releases/latest', {
+  got('https://api.github.com/repos/dogethereumproject/go-ethereum/releases/latest', {
     json: true
   })
     .then(response => {
@@ -34,7 +34,7 @@ gulp.task('update-nodes', cb => {
 
         // Query commit hash (first 8 characters)
         got(
-          `https://api.github.com/repos/dogethereumproject/go-dogethereum/commits/${tagName}`,
+          `https://api.github.com/repos/dogethereumproject/go-ethereum/commits/${tagName}`,
           { json: true }
         )
           .then(response => {
