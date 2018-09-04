@@ -12,7 +12,7 @@ const EventEmitter = require('events').EventEmitter;
 const log = require('./utils/logger').create('ClientBinaryManager');
 
 const BINARY_URL =
-  'https://raw.githubusercontent.com/dogethereumproject/mist/master/clientBinaries.json';
+  'https://raw.githubusercontent.com/dogethereumproject/mist/dogethereum/clientBinaries.json';
 
 const ALLOWED_DOWNLOAD_URLS_REGEX = /^.*/; // eslint-disable-line max-len
 
