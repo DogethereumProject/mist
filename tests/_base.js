@@ -12,7 +12,7 @@ const chai = require('chai');
 const http = require('http');
 const ecstatic = require('ecstatic');
 const express = require('express');
-const ClientBinaryManager = require('ethereum-client-binaries').Manager;
+const ClientBinaryManager = require('dogethereum-client-binaries').Manager;
 const logger = require('../modules/utils/logger');
 
 chai.should();
@@ -103,7 +103,7 @@ exports.mocha = (_module, options) => {
 
       this.geth = yield startGeth();
 
-      const appFileName = options.app === 'wallet' ? 'Ethereum Wallet' : 'Mist';
+      const appFileName = options.app === 'wallet' ? 'Dogethereum Wallet' : 'Dogethereum Mist';
       const platformArch = `${process.platform}-${process.arch}`;
       console.info(`${appFileName} :: ${platformArch}`);
 

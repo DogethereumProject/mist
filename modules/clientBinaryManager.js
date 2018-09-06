@@ -6,7 +6,7 @@ const got = require('got');
 const path = require('path');
 const Settings = require('./settings');
 const Windows = require('./windows');
-const ClientBinaryManager = require('ethereum-client-binaries').Manager;
+const ClientBinaryManager = require('dogethereum-client-binaries').Manager;
 const EventEmitter = require('events').EventEmitter;
 
 const log = require('./utils/logger').create('ClientBinaryManager');
@@ -235,8 +235,8 @@ class Manager extends EventEmitter {
                 binariesDownloaded = true;
 
                 return mgr.download(c.id, {
-                  downloadFolder: path.join(Settings.userDataPath, 'binaries'),
-                  urlRegex: ALLOWED_DOWNLOAD_URLS_REGEX
+                  downloadFolder: path.join(Settings.userDataPath, 'binaries')/*,
+                  urlRegex: ALLOWED_DOWNLOAD_URLS_REGEX*/
                 });
               });
             }
