@@ -1,15 +1,15 @@
 {
     "clients": {
         "Geth": {
-            "version": "1.0.2",
+            "version": "1.0.3",
             "platforms": {
                 "linux": {
                     "x64": {
                         "download": {
-                            "url": "https://github.com/DogethereumProject/go-ethereum/releases/download/v1.0.2/geth-1.0.2.tar.gz",
+                            "url": "https://github.com/DogethereumProject/go-ethereum/releases/download/v1.0.3/geth-1.0.3.tar.gz",
                             "type": "tar",
-                            "md5": "97d4936ecc5dd2d81560e2244dabe402",
-                            "bin": "geth-1.0.2/geth"
+                            "md5": "d49f2c004c7c7be40a3218c80c4496d6",
+                            "bin": "geth-1.0.3/geth"
                         },
                         "bin": "geth",
                         "commands": {
@@ -19,7 +19,7 @@
                                 ],
                                 "output": [
                                     "Geth",
-                                    "1.0.2"
+                                    "1.0.3"
                                 ]
                             }
                         }
@@ -28,10 +28,10 @@
                 "win": {
                     "x64": {
                         "download": {
-                            "url": "https://github.com/DogethereumProject/go-ethereum/releases/download/v1.0.2/geth-1.0.2.zip",
+                            "url": "https://github.com/DogethereumProject/go-ethereum/releases/download/v1.0.3/geth-1.0.3.zip",
                             "type": "zip",
-                            "md5": "06e75410a57ac7d169caa26af38d3fcd",
-                            "bin": "geth-1.0.2\\geth.exe"
+                            "md5": "e6415d31cb986b4a1f2641da4ce8f713",
+                            "bin": "geth-1.0.3\\geth.exe"
                         },
                         "bin": "geth.exe",
                         "commands": {
@@ -41,7 +41,7 @@
                                 ],
                                 "output": [
                                     "Geth",
-                                    "1.0.2"
+                                    "1.0.3"
                                 ]
                             }
                         }
